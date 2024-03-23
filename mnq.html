@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/Logo-no-bg.ico">
+    <title>Cooming Soon </title>
+
+    <!-- Simply Countdown -->
+    <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css" />
+    <script src="countdown/simplyCountdown.min.js"></script>
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="hero">
+            <img src="img/Logo-no-bg.png" alt="">
+            <p>Remaja Islam Masjid AL - Ikhlas</p>
+            <h2>Musabaqoh Nuzulul Qur'an 1445 H</h2>
+            <h1>Cooming Soon</h1>
+            <div class="simply-countdown"></div>
+            <hr>
+
+            <a href="index.html">Homepage</a>
+
+        </div>
+
+    </header>
+
+
+
+    <script src="js/main.js"></script>
+
+    <script>
+        simplyCountdown('.simply-countdown', {
+            year: 2024, // required
+            month: 3, // required
+            day: 28, // required
+            hours: 21, // Default is 0 [0-23] integer
+            words: { //words displayed into the countdown
+                days: { singular: 'hari', plural: 'hari' },
+                hours: { singular: 'jam', plural: 'jam' },
+                minutes: { singular: 'menit', plural: 'menit' },
+                seconds: { singular: 'detik', plural: 'detik' }
+            },
+        });
+
+    </script>
+
+</body>
+
+</html>
